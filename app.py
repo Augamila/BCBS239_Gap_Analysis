@@ -83,7 +83,7 @@ def main():
 
         df = analyze_gaps(text)
         st.subheader("📊 Gap Analysis Results")
-        df_edit = st.experimental_data_editor(df, num_rows="dynamic")
+        df_edit = st.data_editor(df, num_rows="dynamic")
         st.caption("✏️ You can add feedback for each principle.")
 
         score = calculate_score(df_edit)
